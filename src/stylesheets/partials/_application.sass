@@ -1,0 +1,30 @@
+$main_columns: floor($blueprint_grid_columns * 3/4)
+$sidebar_columns: $blueprint_grid_columns - $main_columns
+
+$logo_height: 100px
+$logo_width: 250px
+
+#logo a
+  display: block
+  height: $logo_height
+  width: $logo_width
+  text-indent: -999px
+  background: url(/images/logo.png) no-repeat
+
+#layout, #footer-content
+  +container
+
+#layout
+  background-color: #f09
+
+#content
+  #main
+    +column($main_columns)
+  #sidebar
+    +column($sidebar_columns, true)
+
+#footer
+  background-color: #aaa
+
+@import compass/layout/sticky-footer
+@include sticky-footer(100px, '#layout', '#layout-footer', '#footer')

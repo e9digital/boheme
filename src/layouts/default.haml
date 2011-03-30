@@ -1,0 +1,38 @@
+- @site_name                     = "site name"
+- @title_delimiter               = " - "
+- @meta_description              = "default meta description"
+- @meta_keywords                 = "default, meta, keywords"
+- @google_site_verification_code = nil
+- @meta_title                    = current_page == '/index.html' ? @site_name : full_page_title
+
+!!!
+%html
+  %head
+    %meta{:"http-equiv" => "Content-Type", :content => "text/html; CHARSET=utf-8"}/
+    %title= @meta_title
+    %meta{:name => "description", :content => @meta_description}
+    %meta{:name => "keywords", :content => @meta_keywords}
+    - unless @google_site_verification_code.nil?
+      %meta{:name => "google-site-verification", :content => @google_site_verification_code }/
+    = stylesheets :screen, :media => 'screen, projection'
+    = stylesheets :print, :media => 'print'
+    /[if lt IE 8]
+      = stylesheets :ie, :media => 'screen, projection'
+    = javascripts 'base'
+
+  %body{:id => @body_id, :class => @body_class}
+    #layout
+      #header
+        #logo
+          %h1
+            %a{:href => '/'}= @meta_title 
+      #content
+        #main
+          = yield
+        #sidebar
+          = partial 'sidebar'
+      #layout-footer
+    #footer
+      #footer-content
+        = partial 'footer'
+    #scripts
