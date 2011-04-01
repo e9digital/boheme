@@ -25,10 +25,10 @@
       .main
         #header
           #logo
-            %img(src="images/logo.png") 
+            %img(src="/images/logo.png") 
           = partial 'navbar'
         - if @banner
-          %img(src="/images/banner.jpg")
+          %img(src="/images/banner.jpg" width="990px" height="350px")
         .content
           = yield
     = partial 'footer'

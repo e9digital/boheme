@@ -49,9 +49,15 @@
 		
 
 	
-  $(".combobox").selectmenu();
+  $(".combobox").selectmenu({
+    width: 457
+  });
 	
-      
+//  $('ul.navbar')
+//    .find('a[href="'+ document.location.pathname +'"]')
+//    .closest('li')
+//    .addClass('current')
+//  ;
  
   $('a[rel=external]').click(function() {
     window.open(this.href);

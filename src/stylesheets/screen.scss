@@ -1,7 +1,19 @@
 @import "partials/jquery.ui.core";
 @import "partials/jquery.ui.button";
-@import "partials/jquery.ui.theme";
 @import "partials/jquery.ui.selectmenu";
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+
+  background: #222; 
+
+}
+
+.ui-widget-content {
+
+  background: #555; }
+
+.ui-state-default { background: #222 url(/images/dropdown.png) no-repeat right top; }
+.ui-state-active { background: #222 url(/images/dropdown.png) no-repeat right -89px; }
 
 /* colors used for site: */
 
@@ -9,19 +21,9 @@ $orangish: #c63210;
 $grayish: #777; 
 /* white used as well */
 
-
-
-
-
-
-
-
-
-
-
 .custom-checkbox { position: relative; float: left; }
-.custom-checkbox input { position: absolute; left: 2px; top: 2px; margin: 0; }
-.custom-checkbox label { display: block; position: relative; padding-right: 1em; line-height: 1; padding: .5em 0 .5em 37px; margin: 0 0 .3em; cursor: pointer; z-index: 10; }
+.custom-checkbox input { position: absolute; left: 2px; top: 6px; margin: 0; outline: none; }
+.custom-checkbox label { display: block; position: relative; padding-right: 1em; line-height: 1; padding: .5em 0 .5em 37px; margin: 0 0 .3em; cursor: pointer; z-index: 10; font-size: 16px; }
 .custom-checkbox label { background: url(/images/checkbox.png) no-repeat; }
 
 
@@ -30,7 +32,7 @@ $grayish: #777;
 .custom-checkbox label.checked { background-position: -17px -121px; }
 .custom-checkbox label.checkedHover, .custom-checkbox label.checkedFocus { background-position: -17px -170px; }
 
-.custom-checkbox label.focus { outline: 1px dotted #ccc; }
+.custom-checkbox label.focus {  }
 
 
 /* end custom checkbox css -------- */
@@ -39,6 +41,7 @@ $grayish: #777;
 html, body { height: 100%; }
 body { min-width: 990px; background: #0f0e0d; margin: 0; padding: 0; font-size: 62.5%; font-family: "Trebuchet MS", sans-serif; }
 img { display: block; }
+a img { border: 0 none; }
 
 .wrap { 
   min-height: 100%; margin: 0 auto; width: 990px; }
@@ -46,29 +49,57 @@ img { display: block; }
 .main {
   overflow: auto; padding-bottom: 150px; }
 
-.sticky-footer { font-size: 10px; color: $orangish; position: relative; margin-top: -150px; height: 25px; padding-top: 125px; clear: both; background: url(/images/footer.png) repeat-x bottom left;  
-  .constrain { margin: 0 auto; max-width: 990px; 
+.sticky-footer { font-size: 10px; color: $orangish; position: relative; margin-top: -124px; height: 53px; clear: both; background: url(/images/footer.png) repeat-x bottom left; padding-top: 70px; 
+  .constrain { margin: 0 auto; height: 29px; padding-top: 25px; max-width: 990px; position: relative; background: url(/images/footer-flair.png) no-repeat top center;
     p { color: $orangish; font-size: 10px; }
+    .social { position: absolute; top: 18px; text-align: center; width: 100px; left: 50%; margin-left: -50px; 
+    a { width: 30px; margin: 0 2px; height: 30px; text-decoration: none; display: inline-block; border: 0 none; 
+    &.facebook { background: url(/images/social.png) no-repeat top left;
+      &:hover { background-position: bottom left; }
+    }
+    &.twitter { background: url(/images/social.png) no-repeat top right; 
+      &:hover { background-position: bottom right; } 
+    }
+}
+}
   }
   .fright { background: url(/images/e9digital.png) no-repeat top left; text-indent: -999em; width: 120px; height: 16px; }
+  .fright:hover { background-position: 0 -18px; }
+  img { display: inline; }
+  
+  
 }
 
-table { margin-bottom: 30px; }
+table { font-size: 16px; margin-bottom: 30px; width: 100%; }
 .first-cell { padding-right: 105px; }
 
 #logo { float: left; }
 
-.combobox { float: left; width: 46%; }
-
-form {
-   textarea { background: #222; border: 0 none; color: white; width: 100%; height: 200px; } 
+.combobox { float: left; width: 450px; margin-right: 4px; font-size: 16px; color: white; 
+  a { color: white; }
 }
 
+form {
+   textarea { background: #222; border: 0 none; color: white; width: 904px; height: 200px; padding: 10px; font-family: inherit; } 
+   .gray-border { margin-top: 10px; border: 1px solid #777; padding: 1px; display: block; float: left; }
+   .submit-input { background: #777; border: 0 none; font-size: 16px; font-family: inherit; color: white;  padding: 4px 14px; cursor: pointer; 
+    &:hover { background: #333; } 
+ }
+}
+
+
+.page-rule { height: 30px; width: 100%; margin-top: 45px; border-top: 1px solid white; }
 #header { width: 990px; float: left; clear: both; background: url(/images/header-flourish.png) no-repeat top left; padding-top: 12px; margin-top: 28px; }
 
-.content { background: #070707; clear: both; float: left; width: 930px; padding: 30px; margin-top: 23px; }
+.content { background: #070707; clear: both; float: left; width: 930px; padding: 30px; margin-top: 23px; 
 
-.text-input { float: left; border: 0 none; background-color: #222; color: white; padding: 6px 12px; font-size: 16px; width: 46%; margin: 0 6px 6px 0; }
+  p { margin: 14px 0; font-size: 16px; line-height: 1.4em; }
+
+}
+
+.badge { vertical-align: top; }
+
+.text-input { float: left; border: 0 none; background-color: #222; color: white; padding: 6px 12px; font-size: 16px; width: 436px; margin-right: 4px; margin-bottom: 4px; }
 
 fieldset { border: 0 none; margin: 0; padding: 0; }
 
@@ -78,17 +109,16 @@ fieldset { border: 0 none; margin: 0; padding: 0; }
  dd { font-style: italic; font-size: 16px; }
 }
 
-.module-styling-2 {
+.module-styling-2 { margin-top: 15px; float: left; clear: left; 
   li { color: $orangish; list-style-type: none; font-size: 16px; }
 }
 
-.module-styling-3 { 
-  margin-left: 25px; margin-top: 20px; margin-bottom: 10px; color: $orangish; list-style-type: none; font-size: 12px; 
-  dt, dd { display: inline; }
+.module-styling-3 {    margin-left: 25px; margin-top: 20px; margin-bottom: 10px; color: $orangish; list-style-type: none; font-size: 12px; 
+  dt, dd { display: inline; font-size: 16px; }
   a { color: white; }
 }
 
-.link-styling-1 {}
+.link-styling-1 { font-size: 16px; color: $orangish; }
 .link-styling-2 {}
 
 h1 {  
@@ -101,7 +131,8 @@ h2 {
 
 
 
-p, dl, dt, dd, table, ul, li, label { color: white; font-weight: normal; font-family: inherit; font-size: 16px; }
+
+p, dl, dt, dd, table, ul, li, label { color: white; font-weight: normal; font-family: inherit; }
 
 .fleft { float: left; margin-right: 20px; }
 .fright { float: right; }
@@ -150,7 +181,7 @@ p, dl, dt, dd, table, ul, li, label { color: white; font-weight: normal; font-fa
 .navbar li:last-child { 
   border-right: 0 none; 
 }
-.navbar li a:hover { color: white; background: none; }
+.navbar li a:hover, .navbar .current { color: white; background: none; }
 .navbar li:hover ul {
   display: block;
   position: absolute;

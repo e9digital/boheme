@@ -1,20 +1,20 @@
 %ul.navbar
   %li
-    %a(href="/")
+    %a(href="/"){:class => navbar_class("home") }
       Home
   %li
-    %a(href="/company")
+    %a(href="/company"){:class => navbar_class("company") }
       Company 
     %ul
       %li
-        %a(href="/mission")
+        %a(href="/company/mission")
           Mission
       %li
-        %a(href="/contact")
+        %a(href="/company/contact")
           Contact
   %li
-    %a(href="/films")
+    %a(href="/films"){:class => navbar_class("films") }
       Films 
   %li
-    %a(href="/press")
+    %a(href="/press"){:class => navbar_class("press") }
       Press 

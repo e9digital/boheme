@@ -5,19 +5,19 @@
     <title>Contact - Boheme films</title>
     <meta content="default meta description" name="description" />
     <meta content="default, meta, keywords" name="keywords" />
-    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
-    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+    <link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <link href="../stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
     <!--[if lt IE 8]>
-      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+      <link href="../stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
     <![endif]-->
-    <script language="javascript" src="javascripts/base.js" type="text/javascript"></script>
+    <script language="javascript" src="../javascripts/base.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="wrap">
       <div class="main">
         <div id="header">
           <div id="logo">
-            <img src="images/logo.png" />
+            <img src="/images/logo.png" />
           </div>
           <ul class="navbar">
             <li>
@@ -26,17 +26,17 @@
               </a>
             </li>
             <li>
-              <a href="/company">
+              <a class="current" href="/company">
                 Company
               </a>
               <ul>
                 <li>
-                  <a href="/mission">
+                  <a href="/company/mission">
                     Mission
                   </a>
                 </li>
                 <li>
-                  <a href="/contact">
+                  <a href="/company/contact">
                     Contact
                   </a>
                 </li>
@@ -84,7 +84,9 @@
               </select>
               <input class="text-input" placeholder="Other" type="text" />
               <textarea></textarea>
-              <input class="submit-input" type="submit" value="Send Form" />
+              <span class="gray-border">
+                <input class="submit-input" type="submit" value="Send Form" />
+              </span>
               <ul class="module-styling-2">
                 <li>
                   <strong>
@@ -113,9 +115,11 @@
             <img src="/images/twitter.png" />
           </a>
         </div>
-        <p class="fright">
-          Website design by e9digital
-        </p>
+        <a class="fright" href="http://www.e9digital.com">
+          <p>
+            Website design by e9digital
+          </p>
+        </a>
       </div>
     </div>
     <div id="scripts"></div>
