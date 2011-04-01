@@ -1,6 +1,6 @@
-ssh_user    = ""
-remote_root = ""
-ssh_key     = ""
+ssh_user    = "ubuntu@50.16.218.116"
+remote_root = "/srv/www/bohemefilms.com"
+ssh_key     = "/home/travis/.ec2/gsg-keypair.pem"
 dropbox_dir = ""
 
 desc "Runs preview"

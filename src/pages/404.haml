@@ -1,20 +1,9 @@
-- @layout = 'none'
+- @page_title  = "Oops!"
+- @body_class  = nil
+- @banner      = true
 
-!!!
-%html
-  %head
-    %title Oops!
-    :css
-      div.image { width: 477px; margin: 0 auto; padding: 50px 0; border: 0; }
-      div.image img { border: 0; }
-      body { color: #6f6f6f; font: normal 24px/32px Georgia, serif;}
-      p.bold { font-weight: bold; }
-      a, a:link, a:visited { color: #6f6f6f; }
-      div.dialog { width: 600px; margin: 0 auto; text-align: center;}
+%h1
+  %span Oops!
 
-%body
-  .image
-    %a{:href => "/"}
-      %img{:src => "/images/404.png", :title => "Oops!"}
-  .dialog
-    The requested page does not exist.  Click <a href="/">here</a> to return to the home page.
+%p
+  The page you requested does not exist.
