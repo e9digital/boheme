@@ -1,1 +1,1 @@
-Staticmatic + Compass/Jammit Bootstrap
+Website for Boheme
