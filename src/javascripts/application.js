@@ -8,7 +8,7 @@
       label.mouseover(function(){
         $(this).addClass('hover');
         if( $(this).is('.checked') ){
-         alert('foobar') 
+          $(this).addClass('checkedHover');
         }
       });
       label.mouseout(function(){

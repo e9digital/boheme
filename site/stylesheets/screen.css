@@ -1400,6 +1400,19 @@ table {
   float: left; }
 
 /* line 61 */
+.combobox {
+  float: left;
+  width: 46%; }
+
+/* line 64 */
+form textarea {
+  background: #222;
+  border: 0 none;
+  color: white;
+  width: 100%;
+  height: 200px; }
+
+/* line 67 */
 #header {
   width: 990px;
   float: left;
@@ -1408,7 +1421,7 @@ table {
   padding-top: 12px;
   margin-top: 28px; }
 
-/* line 63 */
+/* line 69 */
 .content {
   background: #070707;
   clear: both;
@@ -1417,7 +1430,7 @@ table {
   padding: 30px;
   margin-top: 23px; }
 
-/* line 65 */
+/* line 71 */
 .text-input {
   float: left;
   border: 0 none;
@@ -1428,35 +1441,35 @@ table {
   width: 46%;
   margin: 0 6px 6px 0; }
 
-/* line 67 */
+/* line 73 */
 fieldset {
   border: 0 none;
   margin: 0;
   padding: 0; }
 
-/* line 69 */
+/* line 75 */
 .module-styling-1 {
   font-size: 16px;
   margin-bottom: 23px; }
-  /* line 70 */
+  /* line 76 */
   .module-styling-1 dt, .module-styling-1 dd {
     display: inline; }
-  /* line 71 */
+  /* line 77 */
   .module-styling-1 dt {
     color: #c63210;
     font-size: 16px; }
-  /* line 72 */
+  /* line 78 */
   .module-styling-1 dd {
     font-style: italic;
     font-size: 16px; }
 
-/* line 76 */
+/* line 82 */
 .module-styling-2 li {
   color: #c63210;
   list-style-type: none;
   font-size: 16px; }
 
-/* line 79 */
+/* line 85 */
 .module-styling-3 {
   margin-left: 25px;
   margin-top: 20px;
@@ -1464,14 +1477,14 @@ fieldset {
   color: #c63210;
   list-style-type: none;
   font-size: 12px; }
-  /* line 81 */
+  /* line 87 */
   .module-styling-3 dt, .module-styling-3 dd {
     display: inline; }
-  /* line 82 */
+  /* line 88 */
   .module-styling-3 a {
     color: white; }
 
-/* line 88 */
+/* line 94 */
 h1 {
   clear: both;
   color: #c63210;
@@ -1479,13 +1492,13 @@ h1 {
   border-bottom: 3px dotted #484848;
   height: 20px;
   margin-bottom: 15px; }
-  /* line 90 */
+  /* line 96 */
   h1 span {
     background: #070707;
     margin-top: 5px;
     padding-right: 3px; }
 
-/* line 93 */
+/* line 99 */
 h2 {
   color: white;
   width: 100%;
@@ -1493,24 +1506,24 @@ h2 {
   border-bottom: 1px solid white;
   padding: 7px 0; }
 
-/* line 98 */
+/* line 104 */
 p, dl, dt, dd, table, ul, li, label {
   color: white;
   font-weight: normal;
   font-family: inherit;
   font-size: 16px; }
 
-/* line 100 */
+/* line 106 */
 .fleft {
   float: left;
   margin-right: 20px; }
 
-/* line 101 */
+/* line 107 */
 .fright {
   float: right; }
 
 /* navigation css ------ */
-/* line 105 */
+/* line 111 */
 .navbar {
   font-family: Arial, Verdana;
   font-size: 14px;
@@ -1520,39 +1533,39 @@ p, dl, dt, dd, table, ul, li, label {
   float: right;
   margin-bottom: 15px; }
 
-/* line 114 */
+/* line 120 */
 .navbar li {
   display: block;
   position: relative;
   float: left; }
 
-/* line 120 */
+/* line 126 */
 .navbar li li {
   width: 100%;
   background: #474747; }
 
-/* line 124 */
+/* line 130 */
 .navbar li li:first-child {
   margin-top: 14px;
   background: url(/images/submenu_gradient.png) repeat-x left top; }
 
-/* line 128 */
+/* line 134 */
 .navbar li {
   border-right: 1px solid #333; }
 
-/* line 132 */
+/* line 138 */
 .navbar li li a {
   width: 100%;
   padding: 20px 0;
   margin: 0;
   text-align: center; }
 
-/* line 134 */
+/* line 140 */
 .navbar li ul {
   display: none;
   width: 100%; }
 
-/* line 135 */
+/* line 141 */
 .navbar li a {
   display: block;
   text-decoration: none;
@@ -1561,34 +1574,34 @@ p, dl, dt, dd, table, ul, li, label {
   white-space: nowrap;
   font: normal 18px "Trebuchet MS"; }
 
-/* line 144 */
+/* line 150 */
 .navbar li:last-child {
   border-right: 0 none; }
 
-/* line 147 */
+/* line 153 */
 .navbar li a:hover {
   color: white;
   background: none; }
 
-/* line 148 */
+/* line 154 */
 .navbar li:hover ul {
   display: block;
   position: absolute; }
 
-/* line 152 */
+/* line 158 */
 .navbar li:hover li {
   float: none;
   font-size: 11px; }
 
-/* line 156 */
+/* line 162 */
 .navbar li:hover a {
   /* background: #555; */ }
 
-/* line 157 */
+/* line 163 */
 .navbar li:hover li a:hover {
   color: #CCC; }
 
-/* line 158 */
+/* line 164 */
 .navbar li li a {
   border-right: 0 none;
   color: white;
