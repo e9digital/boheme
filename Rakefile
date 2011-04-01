@@ -10,7 +10,7 @@ task :preview do
 end
 
 desc "Build the site"
-task :build => ["styles:clear", "dropbox:sync"] do
+task :build => ["styles:clear", "javascripts:generate", "dropbox:sync"] do
   puts "** building site"
   system "staticmatic build ."
 end
@@ -72,7 +72,6 @@ namespace :styles do
   desc "Clear styles"
   task :clear do
     puts "** clearing generated styles"
-    system "rm -Rfv site/stylesheets/*"
   end
 
   desc "Regenerate styles"

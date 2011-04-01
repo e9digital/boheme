@@ -1,4 +1,4 @@
-- @site_name                     = "site name"
+- @site_name                     = "Boheme films"
 - @title_delimiter               = " - "
 - @meta_description              = "default meta description"
 - @meta_keywords                 = "default, meta, keywords"
@@ -12,7 +12,7 @@
     %title= @meta_title
     %meta{:name => "description", :content => @meta_description}
     %meta{:name => "keywords", :content => @meta_keywords}
-    - unless @google_site_verification_code.nil?
+    - if @google_site_verification_code
       %meta{:name => "google-site-verification", :content => @google_site_verification_code }/
     = stylesheets :screen, :media => 'screen, projection'
     = stylesheets :print, :media => 'print'
@@ -21,18 +21,15 @@
     = javascripts 'base'
 
   %body{:id => @body_id, :class => @body_class}
-    #layout
-      #header
-        #logo
-          %h1
-            %a{:href => '/'}= @meta_title 
-      #content
-        #main
+    .wrap 
+      .main
+        #header
+          #logo
+            %img(src="images/logo.png") 
+          = partial 'navbar'
+        - if @banner
+          %img(src="/images/banner.jpg")
+        .content
           = yield
-        #sidebar
-          = partial 'sidebar'
-      #layout-footer
-    #footer
-      #footer-content
-        = partial 'footer'
+    = partial 'footer'
     #scripts

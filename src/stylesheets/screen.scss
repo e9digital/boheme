@@ -1,0 +1,166 @@
+@import "partials/jquery.ui.core";
+@import "partials/jquery.ui.button";
+@import "partials/jquery.ui.theme";
+@import "partials/jquery.ui.selectmenu";
+
+/* colors used for site: */
+
+$orangish: #c63210;
+$grayish: #777; 
+/* white used as well */
+
+
+
+
+
+
+
+
+
+
+
+.custom-checkbox { position: relative; float: left; }
+.custom-checkbox input { position: absolute; left: 2px; top: 2px; margin: 0; }
+.custom-checkbox label { display: block; position: relative; padding-right: 1em; line-height: 1; padding: .5em 0 .5em 37px; margin: 0 0 .3em; cursor: pointer; z-index: 10; }
+.custom-checkbox label { background: url(/images/checkbox.png) no-repeat; }
+
+
+.custom-checkbox label { background-position: -17px -22px; }
+.custom-checkbox label.hover, .custom-checkbox label.focus { background-position: -17px -71px; }
+.custom-checkbox label.checked { background-position: -17px -121px; }
+.custom-checkbox label.checkedHover, .custom-checkbox label.checkedFocus { background-position: -17px -170px; }
+
+.custom-checkbox label.focus { outline: 1px dotted #ccc; }
+
+
+/* end custom checkbox css -------- */
+
+* { margin: 0; padding: 0; }
+html, body { height: 100%; }
+body { min-width: 990px; background: #0f0e0d; margin: 0; padding: 0; font-size: 62.5%; font-family: "Trebuchet MS", sans-serif; }
+img { display: block; }
+
+.wrap { 
+  min-height: 100%; margin: 0 auto; width: 990px; }
+
+.main {
+  overflow: auto; padding-bottom: 150px; }
+
+.sticky-footer { font-size: 10px; color: $orangish; position: relative; margin-top: -150px; height: 25px; padding-top: 125px; clear: both; background: url(/images/footer.png) repeat-x bottom left;  
+  .constrain { margin: 0 auto; max-width: 990px; 
+    p { color: $orangish; font-size: 10px; }
+  }
+  .fright { background: url(/images/e9digital.png) no-repeat top left; text-indent: -999em; width: 120px; height: 16px; }
+}
+
+table { margin-bottom: 30px; }
+.first-cell { padding-right: 105px; }
+
+#logo { float: left; }
+
+.combobox { float: left; width: 46%; }
+
+form {
+   textarea { background: #222; border: 0 none; color: white; width: 100%; height: 200px; } 
+}
+
+#header { width: 990px; float: left; clear: both; background: url(/images/header-flourish.png) no-repeat top left; padding-top: 12px; margin-top: 28px; }
+
+.content { background: #070707; clear: both; float: left; width: 930px; padding: 30px; margin-top: 23px; }
+
+.text-input { float: left; border: 0 none; background-color: #222; color: white; padding: 6px 12px; font-size: 16px; width: 46%; margin: 0 6px 6px 0; }
+
+fieldset { border: 0 none; margin: 0; padding: 0; }
+
+.module-styling-1 { font-size: 16px; margin-bottom: 23px;
+ dt, dd {display: inline;   } 
+ dt { color: $orangish; font-size: 16px; }
+ dd { font-style: italic; font-size: 16px; }
+}
+
+.module-styling-2 {
+  li { color: $orangish; list-style-type: none; font-size: 16px; }
+}
+
+.module-styling-3 { 
+  margin-left: 25px; margin-top: 20px; margin-bottom: 10px; color: $orangish; list-style-type: none; font-size: 12px; 
+  dt, dd { display: inline; }
+  a { color: white; }
+}
+
+.link-styling-1 {}
+.link-styling-2 {}
+
+h1 {  
+   clear: both; color: $orangish; font: bold 2.4em "Trebuchet MS", sans-serif; border-bottom: 3px dotted #484848; height: 20px; margin-bottom: 15px; 
+   span { background: #070707; margin-top: 5px; padding-right: 3px; }  
+ }
+
+h2 {
+  color: white; width: 100%; margin-bottom: 15px; border-bottom: 1px solid white; padding: 7px 0; }
+
+
+
+p, dl, dt, dd, table, ul, li, label { color: white; font-weight: normal; font-family: inherit; font-size: 16px; }
+
+.fleft { float: left; margin-right: 20px; }
+.fright { float: right; }
+
+/* navigation css ------ */
+
+.navbar {
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+  margin-bottom: 15px;
+}
+.navbar li {
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.navbar li li { 
+  width: 100%; background: #474747;
+}
+
+.navbar li li:first-child {
+  margin-top: 14px; background: url(/images/submenu_gradient.png) repeat-x left top;
+}
+
+.navbar li {
+  border-right: 1px solid #333;
+}
+
+.navbar li li a { 
+  width: 100%; padding: 20px 0; margin: 0; text-align: center; }
+.navbar li ul { display: none; width: 100%; }
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  color: $grayish;
+  padding: 15px 50px 15px 50px;
+  white-space: nowrap;
+  font: normal 18px "Trebuchet MS";
+}
+
+.navbar li:last-child { 
+  border-right: 0 none; 
+}
+.navbar li a:hover { color: white; background: none; }
+.navbar li:hover ul {
+  display: block;
+  position: absolute;
+}
+.navbar li:hover li {
+  float: none;
+  font-size: 11px;
+}
+.navbar li:hover a { /* background: #555; */  }
+.navbar li:hover li a:hover { color: #CCC; }
+.navbar li li a { border-right: 0 none; color: white; border-bottom: 1px solid black; }
+
+

@@ -1,0 +1,42 @@
+- @page_title  = "Contact"
+- @body_class  = nil
+
+%h1
+  %span=@page_title
+
+%form
+  %fieldset 
+    %h2
+      Contact Boh&#232;me Films
+
+    %input.text-input(type="text" placeholder="First Name")
+    %input.text-input(type="text" placeholder="Last Name")
+    %input.text-input(type="text" placeholder="Email Address")
+
+    %input.checkbox(type="checkbox" name="contact-agreement" id="contact-agreement" value="contact-agreement")
+      %label(for="contact-agreement")Please contact me
+  %fieldset
+    %h2
+      Reason for inquiry
+
+    %select.combobox
+      %option(value="") Select one...
+      %option(value="information")Information
+      %option(value="press")Press
+      %option(value="sai")Social Action Inquiries
+      %option(value="techissues")Technical Issues
+      %option(value="unsubscribe")Unsubscribe
+
+    %input.text-input(type="text" placeholder="Other")
+    %textarea
+
+    %input.submit-input(type="submit" value="Send Form")
+
+    %ul.module-styling-2
+      %li 
+        %strong
+          Boh&#232;me Films
+      %li 154 Grand Street, 3rd Floor
+      %li New York, NY 10003
+      %li Phone: 212.920.0895
+       
