@@ -26,7 +26,8 @@
       .main
         #header
           #logo
-            %img(src="/images/logo.png") 
+            %a(href="/")
+              %img(src="/images/logo.png") 
           = partial 'navbar'
         - if @banner
           %img(src="/images/banner.jpg" width="990px" height="350px")
