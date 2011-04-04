@@ -9,5 +9,4 @@ javascripts:
     - 'src/javascripts/jquery-1.5.1.min.js'
     - 'src/javascripts/jquery-ui-1.8.11.custom.js'
     - 'src/javascripts/jquery.ui.selectmenu.js'
-    - 'src/javascripts/jquery.placeholder.js'
     - 'src/javascripts/application.js'
