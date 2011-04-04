@@ -1,5 +1,7 @@
 ;jQuery(function($) {
 
+
+
   var checkboxes = $('input[type=checkbox]');
 
   checkboxes.each(function(){
@@ -54,6 +56,11 @@
     return false;
   });
 
-  console.log('The page has loaded');
+  $('body.contact input[placeholder]').placeholder();
 
+  $('body.contact form')
+    .submit(function(e) {
+      e.preventDefault();
+    })
+  ;
 });
