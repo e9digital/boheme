@@ -9,17 +9,18 @@
     %h2
       Contact Boh&#232;me Films
 
-    %input.text-input(type="text" placeholder="First Name")
-    %input.text-input(type="text" placeholder="Last Name")
-    %input.text-input(type="text" placeholder="Email Address")
+    %input.text-input(type="text" placeholder="First Name" name="first-name")
+    %input.text-input(type="text" placeholder="Last Name" name="last-name")
+    %input.text-input(type="text" placeholder="Email Address" name="email")
 
-    %input.checkbox(type="checkbox" name="contact-agreement" id="contact-agreement")
+    %input.checkbox(type="checkbox" style="display:none;visibility:hidden" name="contact-agreement" value="no" checked="checked")
+    %input.checkbox(type="checkbox" id="contact-agreement" name="contact-agreement" value="yes")
     %label(for="contact-agreement") Please contact me
   %fieldset
     %h2
       Reason for inquiry
 
-    %select.combobox
+    %select.combobox(name="primary-reason")
       %option(value="") Select one...
       %option(value="information")Information
       %option(value="press")Press
@@ -27,8 +28,8 @@
       %option(value="techissues")Technical Issues
       %option(value="unsubscribe")Unsubscribe
 
-    %input.text-input(type="text" placeholder="Other")
-    %textarea
+    %input.text-input(type="text" placeholder="Other" name="other-reason")
+    %textarea(name="message")
 
     %span.gray-border
       %input.submit-input(type="submit" value="Send Form")
