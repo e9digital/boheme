@@ -1,7 +1,7 @@
 *.swp
 *.swo
 *.html
-*.css
-*.js
+site/**/*.css
+site/**/*.js
 *.gz
 .sass-cache
