@@ -78,9 +78,21 @@
                                                               })
                                         });
 
-  $('body.contact form')
-    .submit(function(e) {
-      e.preventDefault();
-    })
-  ;
+  $('body.contact form').submit(function(e) {
+    e.preventDefault();
+
+    var $form = $(this);
+
+    $.ajax({
+      url: "/cgi-bin/contact.php",
+      type: 'POST',
+      data: $form.serialize(),
+      dataType: 'script',
+      complete: function() {
+        $form.replaceWith(
+          "<p>Thank you for your submission!</p>"
+        );
+      }
+    });
+  });
 });
