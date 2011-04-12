@@ -91,9 +91,9 @@ form {
 .page-rule { height: 30px; width: 100%; margin-top: 45px; border-top: 1px solid white; }
 #header { width: 990px; float: left; clear: both; background: url(/images/header-flourish.png) no-repeat top left; padding-top: 12px; margin-top: 28px; }
 
-.content { background: #070707; clear: both; float: left; width: 930px; padding: 30px; margin-top: 23px; 
+.content { background: #070707; clear: both; float: left; width: 930px; padding: 30px; margin-top: 43px; 
 
-  p { margin: 14px 0; font-size: 16px; line-height: 1.4em; }
+  p { margin: 14px 0; font-size: 14px; line-height: 1.4em; }
 
 }
 
@@ -122,8 +122,8 @@ fieldset { border: 0 none; margin: 0; padding: 0; }
 .link-styling-2 {}
 
 h1 {  
-   clear: both; color: $orangish; font: bold 2.4em "Trebuchet MS", sans-serif; border-bottom: 3px dotted #484848; height: 20px; margin-bottom: 15px; 
-   span { background: #070707; margin-top: 5px; padding-right: 3px; }  
+   clear: both; color: $orangish; font: bold 2.1em "Trebuchet MS", sans-serif; border-bottom: 3px dotted #484848; height: 20px; margin-bottom: 15px; 
+   span { background: #070707; margin-top: 5px; padding-right: 3px; display: inline-block ; }  
  }
 
 h2 {
@@ -146,7 +146,7 @@ p, dl, dt, dd, table, ul, li, label { color: white; font-weight: normal; font-fa
   padding: 0;
   list-style: none;
   float: right;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 .navbar li {
   display: block;
@@ -175,7 +175,7 @@ p, dl, dt, dd, table, ul, li, label { color: white; font-weight: normal; font-fa
   color: $grayish;
   padding: 15px 50px 15px 50px;
   white-space: nowrap;
-  font: normal 18px "Trebuchet MS";
+  font: normal 15px "Trebuchet MS";
 }
 
 .navbar li:last-child { 
